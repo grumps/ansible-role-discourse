@@ -1,0 +1,38 @@
+---
+# handlers file for discourse
+
+- name: launcher rebuild data
+  shell: /var/discourse/launcher rebuild data web_only
+
+- name: launcher bootstrap data
+  shell: /var/discourse/launcher bootstrap data web_only
+
+- name: launcher start data
+  shell: /var/discourse/launcher start data web_only
+
+- name: launcher stop data
+  shell: /var/discourse/launcher stop data web_only
+
+- name: launcher restart data
+  shell: /var/discourse/launcher restart data web_only
+
+- name: launcher destroy data
+  shell: /var/discourse/launcher destroy data web_only
+
+- name: launcher rebuild web_only
+  shell: /var/discourse/launcher rebuild web_only
+
+- name: launcher bootstrap web_only
+  shell: /var/discourse/launcher bootstrap web_only
+
+- name: launcher start web_only
+  shell: /var/discourse/launcher start web_only
+
+- name: launcher stop web_only
+  shell: /var/discourse/launcher stop web_only
+
+- name: launcher restart web_only
+  shell: /var/discourse/launcher restart web_only
+
+- name: launcher destroy web_only
+  shell: /var/discourse/launcher destroy web_only
